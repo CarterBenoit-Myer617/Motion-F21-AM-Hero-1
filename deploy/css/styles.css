@@ -464,7 +464,6 @@ header > div aside a {
 #hero {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
 }
 @media (min-width: 1440px) {
   #hero {
@@ -474,6 +473,15 @@ header > div aside a {
   }
 }
 #hero > div {
+  overflow: hidden !important;
+  border: 1px solid red;
+}
+@media (min-width: 1440px) {
+  #hero > div {
+    grid-area: ". hero .";
+  }
+}
+#hero > div article {
   background-image: url("../img/hero/hero.jpg");
   background-size: cover;
   background-position: center;
@@ -483,37 +491,32 @@ header > div aside a {
   align-items: center;
   justify-content: center;
 }
-@media (min-width: 1440px) {
-  #hero > div {
-    grid-area: hero;
-  }
-}
-#hero > div section {
+#hero > div article section {
   color: #fff;
   text-align: center;
 }
-#hero > div section > h1 {
+#hero > div article section > h1 {
   color: #fff;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 4rem;
   font-stretch: wider;
   font-stretch: expanded;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
-  #hero > div section > h1 {
+  #hero > div article section > h1 {
     font-size: 4.625rem;
   }
 }
 @media (min-width: 1024px) {
-  #hero > div section > h1 {
+  #hero > div article section > h1 {
     font-size: 5.25rem;
   }
 }
 @media (min-width: 1440px) {
-  #hero > div section > h1 {
+  #hero > div article section > h1 {
     font-size: 5.875rem;
   }
 }
