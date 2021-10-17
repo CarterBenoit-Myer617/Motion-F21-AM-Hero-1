@@ -462,7 +462,7 @@ header > div aside a {
     Footer
 ============= */
 #hero {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -496,18 +496,20 @@ header > div aside a {
   color: #fff;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 4rem;
+  font-weight: 500;
+  font-size: 5.25rem;
+  font-stretch: wider;
+  font-stretch: expanded;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   #hero > div section > h1 {
-    font-size: 3.375rem;
+    font-size: 4rem;
   }
 }
 @media (min-width: 1024px) {
   #hero > div section > h1 {
-    font-size: 4rem;
+    font-size: 4.625rem;
   }
 }
 
