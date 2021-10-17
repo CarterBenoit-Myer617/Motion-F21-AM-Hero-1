@@ -124,7 +124,7 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/dev\/index.kit",
+      "oAP" : "\/deploy\/index.html",
       "oF" : 3
     },
     "\/dev\/js\/scripts.js" : {
