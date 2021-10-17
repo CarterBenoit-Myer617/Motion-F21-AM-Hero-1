@@ -448,13 +448,13 @@ header {
   z-index: 1000;
 }
 
-> div {
+header > div {
   display: grid;
   grid-template-columns: 20% auto;
   padding: 8px 16px;
 }
 
-> div aside a {
+header > div aside a {
   display: inline-block;
 }
 

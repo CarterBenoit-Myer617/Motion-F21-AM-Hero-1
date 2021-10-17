@@ -8,19 +8,11 @@ header {
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.1));
   z-index: 1000;
 }
-
->div {
+header > div {
   display: grid;
   grid-template-columns: 20% auto;
   padding: 8px 16px;
-
-  aside{
-
-    a{
-      display: inline-block;
-
-    }
-
-  }
-
+}
+header > div aside a {
+  display: inline-block;
 }
