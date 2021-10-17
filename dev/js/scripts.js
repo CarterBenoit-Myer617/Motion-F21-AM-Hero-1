@@ -4,6 +4,8 @@ import {
 
 const mainTL = gsap.timeline();
 
+const heroHeight = document.querySelector("#hero");
+
 // name of timeline | do you want to start at the end or the beiginning of the timeline? | what do you want to anomate? \{how long os the animation? \what do you want to do?}
 
 // mainTL.to("#hero",{duration:2, alpha:0});
@@ -11,7 +13,7 @@ const mainTL = gsap.timeline();
 mainTL.from("#hero >div article", {
     duration: 1,
     alpha: 0,
-    y: "-=1000",
+    y: "-heroHight.clientHight",
     scale: 3
 });
 mainTL.from("#hero h1", {
