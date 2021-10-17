@@ -1,7 +1,7 @@
 #content {
     display: grid;
     grid-template-areas: ". content .";
-    grid-template-columns: auto 100% auto;
+    grid-template-columns: auto 90% auto;
     padding: 64px 0;
 
     @include md {
