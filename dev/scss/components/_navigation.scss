@@ -1,26 +1,28 @@
 /* =============
     Navigation
 ============= */
-nav{
+nav {
     height: 100%;
 
-    ul{
+    ul {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         height: 100%;
 
-        li{
+        li {
             margin-left: 4vw;
 
-            a:link, a:visited{
+            a:link,
+            a:visited {
                 font-family: 'Roboto Slab', serif;
                 font-size: rem-calc(18);
                 color: $blue;
                 font-weight: 300;
                 transition: 0.25s;
 
-                &:hover, &:active{
+                &:hover,
+                &:active {
                     color: $purple;
                 }
 

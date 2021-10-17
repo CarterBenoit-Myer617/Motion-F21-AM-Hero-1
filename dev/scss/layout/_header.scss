@@ -9,12 +9,11 @@ header {
   z-index: 1000;
 }
 
-header > div {
+> div {
   display: grid;
   grid-template-columns: 20% auto;
   padding: 8px 16px;
 }
-
-header > div aside a {
+> div aside a {
   display: inline-block;
 }

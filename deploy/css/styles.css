@@ -434,14 +434,17 @@ nav ul {
 nav ul li {
   margin-left: 4vw;
 }
-nav ul li a:link, nav ul li a:visited {
+nav ul li a:link,
+nav ul li a:visited {
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
   color: #073b17;
   font-weight: 300;
   transition: 0.25s;
 }
-nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+nav ul li a:link:hover, nav ul li a:link:active,
+nav ul li a:visited:hover,
+nav ul li a:visited:active {
   color: #0c6669;
 }
 
@@ -456,13 +459,13 @@ header {
   z-index: 1000;
 }
 
-header > div {
+> div {
   display: grid;
   grid-template-columns: 20% auto;
   padding: 8px 16px;
 }
 
-header > div aside a {
+> div aside a {
   display: inline-block;
 }
 
