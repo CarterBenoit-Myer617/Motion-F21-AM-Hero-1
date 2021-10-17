@@ -6,6 +6,8 @@ const mainTL = gsap.timeline();
 
 const heroHeight = document.querySelector("#hero");
 
+console.log(heroHeight.clientHeight + "px is the hight of the hero section");
+
 // name of timeline | do you want to start at the end or the beiginning of the timeline? | what do you want to anomate? \{how long os the animation? \what do you want to do?}
 
 // mainTL.to("#hero",{duration:2, alpha:0});
