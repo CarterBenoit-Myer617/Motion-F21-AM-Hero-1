@@ -427,7 +427,7 @@ nav ul li a:link,
 nav ul li a:visited {
   font-family: "Roboto Slab", serif;
   font-size: 1.125rem;
-  color: #073b17;
+  color: #000;
   font-weight: 300;
   transition: 0.25s;
 }
