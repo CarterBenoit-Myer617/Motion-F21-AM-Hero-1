@@ -4,8 +4,6 @@ import {
 
 const mainTL = gsap.timeline();
 
-const duration= 0.5;
-
 // name of timeline | do you want to start at the end or the beiginning of the timeline? | what do you want to anomate? \{how long os the animation? \what do you want to do?}
 
 // mainTL.to("#hero",{duration:2, alpha:0});
