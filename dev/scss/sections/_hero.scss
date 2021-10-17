@@ -14,11 +14,12 @@
         background-image: url("../img/hero/hero.jpg");
         background-size: cover;
         background-position: center;
-        height: fit-content;
-        width: fit-content;
+        height: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
         @include xl {
             grid-area: hero;
