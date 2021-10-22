@@ -13,7 +13,7 @@ console.log(heroHeight.clientWidth + "px is the with of the hero section");
 
 // mainTL.to("#hero",{duration:2, alpha:0});
 
-mainTL.from("#hero >div article", {
+mainTL.from("#hero, article", {
     duration: 1,
     alpha: 0,
     y: "-heroHight.clientHight",
