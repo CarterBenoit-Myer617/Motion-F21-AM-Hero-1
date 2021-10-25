@@ -1,6 +1,10 @@
 import {
     gsap
 } from "gsap";
+import { gsap } from "gsap";
+import { GSDevTools } from "gsap/GSDevTools";
+
+gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 
@@ -21,16 +25,16 @@ function flowerstopmotion() {
 
 }
 
-function outline() {
+// function outline() {
 
-    const tl = gsap.timeline
+//     const tl = gsap.timeline
 
-    tl.from("#MacBook Pro - 2", {
-        duration: 4,
-    });
-    return tl;
+//     tl.from("#MacBook Pro - 1", {
+//         duration: 4,
+//     });
+//     return tl;
 
-}
+// }
 
 mainTl.add(flowerstopmotion()).add(outline)
 
@@ -75,3 +79,5 @@ mainTl.add(flowerstopmotion()).add(outline)
 //     alpha: 0,
 //     y: "+=200"
 // },"-=50%");
+
+GSDevTools.create();
