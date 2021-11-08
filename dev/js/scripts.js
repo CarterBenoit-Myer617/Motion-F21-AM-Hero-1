@@ -1,17 +1,19 @@
 import {gsap} from "gsap";
 
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 
-gsap.registerPlugin(GSDevTools);
+// gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 
-function growprogress(){
-    const tl = gsap.timeline();
-    tl.from("#fill",{duration: 2, scaleX:0});
-    return tl;
+mainTL.to("#hand",{duration: 1, alpha:0, scale:2});
 
-}
+// function growprogress(){
+//     const tl = gsap.timeline();
+//     tl.from("#fill",{duration: 2, scaleX:0});
+//     return tl;
+
+// }
 
 
 
