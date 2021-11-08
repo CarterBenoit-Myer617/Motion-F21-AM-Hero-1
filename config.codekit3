@@ -145,7 +145,7 @@
       "oA" : 0,
       "oAP" : "\/deploy\/js\/scripts-min.js",
       "oF" : 3,
-      "sC" : 3,
+      "sC" : 0,
       "tS" : 0
     },
     "\/dev\/scss\/base\/_base.scss" : {

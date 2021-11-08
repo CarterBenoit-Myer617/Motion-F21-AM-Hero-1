@@ -15,7 +15,7 @@ function growprogress(){
 
 }
 
-mainTL.add(growprogress);
+
 
 
 
