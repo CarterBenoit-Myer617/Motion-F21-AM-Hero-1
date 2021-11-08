@@ -1,6 +1,4 @@
-import {
-    gsap
-} from "gsap";
+import {gsap} from "gsap";
 
 import { GSDevTools } from "gsap/GSDevTools";
 
@@ -10,7 +8,7 @@ const mainTL = gsap.timeline();
 
 function growprogress(){
     const tl = gsap.timeline();
-    tl.from("#hand",{duration: 2, scaleX:0});
+    tl.from("#fill",{duration: 2, scaleX:0});
     return tl;
 
 }
