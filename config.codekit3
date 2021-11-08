@@ -60,6 +60,14 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/index.html",
+      "oF" : 0
+    },
     "\/deploy\/js\/scripts-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -71,21 +79,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/MacBook Pro - 1.svg" : {
+    "\/design\/Frame.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/MacBook Pro - 1.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/MacBook Pro - 2.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/MacBook Pro - 2.svg",
+      "oAP" : "\/design\/Frame.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
