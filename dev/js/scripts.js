@@ -1,42 +1,56 @@
 import {
     gsap
 } from "gsap";
-import { gsap } from "gsap";
+
 import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
-
-// mainTL.to("#Vector", {
-//     duation: 1,
-//     alpha: 0,
-//     scale: 2
-// });
-
-function flowerstopmotion() {
-
-    const tl = gsap.timeline
-
-    tl.from("#MacBook Pro - 1", {
-        duration: 2,
-    });
-    return tl;
+function growprogress(){
+    const tl = gsap.timeline();
+    tl.from("fill",{duration: 2, scaleX:0})
 
 }
 
-// function outline() {
+
+
+
+
+
+
+
+
+
+// // mainTL.to("#Vector", {
+// //     duation: 1,
+// //     alpha: 0,
+// //     scale: 2
+// // });
+
+// function flowerstopmotion() {
 
 //     const tl = gsap.timeline
 
 //     tl.from("#MacBook Pro - 1", {
-//         duration: 4,
+//         duration: 2,
 //     });
 //     return tl;
 
 // }
 
-mainTl.add(flowerstopmotion()).add(outline)
+// // function outline() {
+
+// //     const tl = gsap.timeline
+
+// //     tl.from("#MacBook Pro - 1", {
+// //         duration: 4,
+// //     });
+// //     return tl;
+
+// // }
+
+// mainTl.add(flowerstopmotion()).add(outline)
 
 
 
