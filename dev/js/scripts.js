@@ -2,7 +2,7 @@ import {
     gsap
 } from "gsap";
 
-import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
@@ -95,4 +95,4 @@ function growprogress(){
 //     y: "+=200"
 // },"-=50%");
 
-GSDevTools.create();
+// GSDevTools.create();
