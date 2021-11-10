@@ -1,5 +1,38 @@
-// import {gsap} from "gsap";
+import {gsap} from "gsap";
 
+var tl = gsap.timeline({onUpdate:updateSlider, defaults: {duration: 1}}),
+    circle = document.getElementById("circle");
+
+tl.to(circle, {morphSVG:"#hippo"}, "+=1")
+  .to(circle, {morphSVG:"#star"}, "+=1")
+  .to(circle, {morphSVG:"#elephant"}, "+=1")
+  .to(circle, {morphSVG:circle}, "+=1");
+
+
+
+
+
+
+
+
+/* controls */
+
+// $("#slider").slider({
+//   range: false,
+//   min: 0,
+//   max: 1,
+//   step:.001,
+//   slide: function ( event, ui ) {
+//     tl.progress( ui.value ).pause();
+//   },
+//   stop: function () {
+//     tl.play();
+//   }
+// }); 
+
+// function updateSlider() {
+//   $("#slider").slider("value", tl.progress());
+// } 
 // // import { GSDevTools } from "gsap/GSDevTools";
 
 // gsap.registerPlugin(GSDevTools);
