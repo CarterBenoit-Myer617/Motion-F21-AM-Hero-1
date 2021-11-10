@@ -3,10 +3,9 @@
 
 import {gsap} from "gsap";
 
+const maintl = gsap.timeline();
 
-const maintl = gsap.timeline()
-
-maintl.to("#leaves-start", {duration: 1, morphSVG:"#leaves-end"});
+maintl.to("dirt", {duration: 1, alpha:0, scale:2});
 
 
 
