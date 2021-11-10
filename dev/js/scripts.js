@@ -1,12 +1,5 @@
 import {gsap} from "gsap";
 
-var tl = gsap.timeline({onUpdate:updateSlider, defaults: {duration: 1}}),
-    circle = document.getElementById("circle");
-
-tl.to(circle, {morphSVG:"#hippo"}, "+=1")
-  .to(circle, {morphSVG:"#star"}, "+=1")
-  .to(circle, {morphSVG:"#elephant"}, "+=1")
-  .to(circle, {morphSVG:circle}, "+=1");
 
 
 
@@ -15,7 +8,56 @@ tl.to(circle, {morphSVG:"#hippo"}, "+=1")
 
 
 
-/* controls */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var tl = gsap.timeline({onUpdate:updateSlider, defaults: {duration: 1}}),
+//     circle = document.getElementById("circle");
+
+// tl.to(circle, {morphSVG:"#hippo"}, "+=1")
+//   .to(circle, {morphSVG:"#star"}, "+=1")
+//   .to(circle, {morphSVG:"#elephant"}, "+=1")
+//   .to(circle, {morphSVG:circle}, "+=1");
+
+
+
+
+
+
+
+
+// /* controls */
 
 // $("#slider").slider({
 //   range: false,
@@ -33,7 +75,7 @@ tl.to(circle, {morphSVG:"#hippo"}, "+=1")
 // function updateSlider() {
 //   $("#slider").slider("value", tl.progress());
 // } 
-// // import { GSDevTools } from "gsap/GSDevTools";
+// import { GSDevTools } from "gsap/GSDevTools";
 
 // gsap.registerPlugin(GSDevTools);
 

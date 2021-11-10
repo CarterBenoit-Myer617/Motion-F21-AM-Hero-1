@@ -478,6 +478,9 @@ header > div aside a {
   justify-content: center;
   align-items: center;
 }
+#preloader svg {
+  border: 3px solid red;
+}
 
 #hero {
   height: 100vh;
