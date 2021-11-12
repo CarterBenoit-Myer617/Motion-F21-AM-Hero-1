@@ -5,7 +5,7 @@ import {gsap} from "gsap";
 
 const maintl = gsap.timeline();
 
-maintl.to("dirt", {duration: 1, alpha:0, scale:2});
+maintl.to("hand", {duration: 1, alpha:0, scale:2});
 
 
 
