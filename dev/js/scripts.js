@@ -1,11 +1,87 @@
+import { gsap } from "gsap";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
+import { GSDevTools } from "gsap/GSDevTools";
+import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
+
+gsap.set("stem-end",{transformOrigin:"center bottom"});
+
+const mainTl = gsap.timeline();
+
+function GrowPlantOne(){
+
+    const tl = gsap.timeline("#stem",{duration:0.5, scaleX:0});
+
+    return tl;
 
 
 
-import {gsap} from "gsap";
 
-const maintl = gsap.timeline();
+}
 
-maintl.to("hand", {duration: 1, alpha:0, scale:2});
+mainTl.add(GrowPlantOne());
+
+
+
+
+
+
+
+GSDevTools.create();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import {gsap} from "gsap";
+// import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+
+// gsap.registerPlugin(MorphSVGPlugin);
+
+// const maintl = gsap.timeline();
+
+// maintl.to("#leaves-start ", {duration: 1, morphSVG:"#leaves-end"});
+
 
 
 
