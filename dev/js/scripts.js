@@ -17,8 +17,11 @@ gsap.set("#Vector_17",{transformOrigin:"bottom"});
 gsap.set("#Vector_8",{transformOrigin:"bottom"});
 gsap.set("#Union_11",{transformOrigin:"bottom"});
 gsap.set("#Union_4",{transformOrigin:"bottom"});
+
 gsap.set("#YerrUnion_5",{transformOrigin:"bottom"});
-gsap.set("#Vector_4",{transformOrigin:"bottom"}
+
+
+
 
 
 
@@ -92,7 +95,7 @@ tl.to("#Union_11",{duration:0.5,scaleY:0.3},"chain brakes!!")
 tl.to("#YerrUnion_4",{duration:0.5,scaleY:.3},"chain brakes!!")
 tl.to("#YerrUnion_5",{duration:0.5,scaleY:7},"chain brakes!!")
 
-tl.to("#Vector_4",{duration:0.5,scaleY:7},"chain brakes!!")
+tl.to("#Vector_5",{duration:0.5,scaleY:3.5},"chain brakes!!")
 
 
 
