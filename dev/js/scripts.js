@@ -3,19 +3,25 @@ import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { GSDevTools } from "gsap/GSDevTools";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
-import { TweenMax, Power2, TimelineLite } from "gsap/umd/TweenMax"; 
 
 
-gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, TweenMax,Power2,TimelineLite, GSDevTools, MorphSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 
 
 gsap.set("#THECHAIN",{scalex:"center"});
-
-gsap.set("#Bottom Group",{scalex:"center"});
-
+gsap.set("#BottomGroup",{scalex:"center"});
 gsap.set("#TopGroup",{scalex:"center"});
+gsap.set("#Union_6",{transformOrigin:"top"});
+gsap.set("#Union_7",{transformOrigin:"bottom"});
+gsap.set("#Vector_17",{transformOrigin:"bottom"});
+gsap.set("#Vector_8",{transformOrigin:"bottom"});
+gsap.set("#Union_11",{transformOrigin:"bottom"});
+gsap.set("#Union_4",{transformOrigin:"bottom"});
+gsap.set("#YerrUnion_5",{transformOrigin:"bottom"});
+gsap.set("#Vector_4",{transformOrigin:"bottom"}
 
-gsap.set("#1-LR-bottom-1", { scaleY: 0, transformOrigin: "center bottom" });
+
+
 
 
 // gsap.set("#",{TransformOrigin:""});
@@ -53,7 +59,7 @@ function ScaleChainCenter(){
   const tl = gsap.timeline();
 
 
-  tl.to("#THECHAIN",{duration:2.,scale:2.0, rotation:90, transformOrigin:"center"});
+  tl.to("#THECHAIN",{duration:2.,scale:2, rotation:-90, transformOrigin:"center"});
   
   
 
@@ -67,8 +73,29 @@ function ScaleChainCenter(){
 function ChainBrakeRotation(){
 
   const tl = gsap.timeline();
-tl.to("#BottomGroup",{duration:1,rotation:90, transformOrigin:"50% 50%"});
-tl.to("#TopGroup",{duration:1,rotation:-90, transformOrigin:"50% 50%"});
+tl.to("#BottomGroup",{duration:1,rotation:90, transformOrigin:"50% 50%"},"chain brakes!!")
+tl.to("#TopGroup",{duration:1,rotation:-90, transformOrigin:"50% 50%"},"chain brakes!!")
+
+tl.to("#Union_7",{duration:0.5,scaleY:.3},"chain brakes!!" )
+tl.to("#Union_6",{duration:0.5,scaleY:6},"chain brakes!!")
+
+
+
+tl.to("#Vector_8",{duration:0.5,scaleY:0},"chain brakes!!")
+tl.to("#Vector_7",{duration:0.5,scaleY:12},"chain brakes!!")
+
+
+tl.to("#Vector_17",{duration:0.5,scaleY:0.3},"chain brakes!!")
+tl.to("#Union_11",{duration:0.5,scaleY:0.3},"chain brakes!!")
+
+
+tl.to("#YerrUnion_4",{duration:0.5,scaleY:.3},"chain brakes!!")
+tl.to("#YerrUnion_5",{duration:0.5,scaleY:7},"chain brakes!!")
+
+tl.to("#Vector_4",{duration:0.5,scaleY:7},"chain brakes!!")
+
+
+
 
  
  
@@ -78,39 +105,11 @@ return tl;
 
 } 
 
-function ChainBrakeRotation2(){
-
-  const tl = gsap.timeline();
-tl.to("#TopGroup",{duration:2,rotation:-90, transformOrigin:"50% 50%"});
-tl.to("#1-LR-bottom-1",{duration:0.5,scaleY:0});
-
- 
- 
- 
-  
-return tl;
-
-} 
-
-// function ChainScaleY(){
-//   tl.to("#1-LR-bottom-1",{duration:0.5,scaleY:0});
-
-//   const tl = gsap.timeline();
-
-
- 
- 
- 
-  
-// return tl;
-
-// } 
 GSDevTools.create();
 
 mainTl.add(ScaleChainCenter())
-.add(ChainBrakeRotation())
-.add(ChainBrakeRotation2());
-// .add(ChainScaleY());
+.add(ChainBrakeRotation());
+
 
 
 
