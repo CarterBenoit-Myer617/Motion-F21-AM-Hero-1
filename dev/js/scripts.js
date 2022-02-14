@@ -1,228 +1,93 @@
-import { gsap } from "gsap";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-import { GSDevTools } from "gsap/GSDevTools";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+import {gsap} from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
+const mainTL = gsap.timeline();
 
-// gsap.set("#stem",{TransformOrigin:"center bottom"});
-
-gsap.set("#Plant-Clip",{TransformOrigin:"bottom"});
-gsap.set("#Plants-Stems-Clip",{TransformOrigin:"bottom"});
-gsap.set("#leaves-Clip",{TransformOrigin:"bottom"});
-
-gsap.set("#Grass-clip",{TransformOrigin:"bottom"});
-
-gsap.set("#LG-Stem-Red-clip",{TransformOrigin:"bottom"});
-gsap.set("#Flower-Red-One-clip",{TransformOrigin:"bottom"});
-
-gsap.set("#DG-Stem-Two-clip",{TransformOrigin:"bottom"});
-gsap.set("#Flower-Red-Three-clip",{TransformOrigin:"bottom"});
-
-gsap.set("#LG-Stem-White-clip",{TransformOrigin:"bottom"});
-gsap.set("#Flower-white-two-clip",{TransformOrigin:"bottom"});
-
-gsap.set("#Flower-White-One-clip",{TransformOrigin:"bottom"});
-gsap.set("#DG-Stem-One-clip",{TransformOrigin:"bottom"});
+gsap.set("#container", {alpha:0, duration:4, y:-200, x:-200})
 
 
-
-
-gsap.set("#Red-Flower-Leaves-Clip",{TransformOrigin:"bottom"});
-
-gsap.set("#LG-Stem-Blue-One-clip",{TransformOrigin:"bottom"});
-gsap.set("#Flower-Blue-Top-clip",{TransformOrigin:"bottom"});
-
-
-
-
-gsap.set("#Yellow-Flower-clip",{TransformOrigin:"bottom"});
-
-
-
-const mainTl = gsap. timeline();
-
-function GrowPlantOne(){
-
-  const tl = gsap.timeline();
-
-
-  tl.from("#Plant-Clip", {duration:1, scaleY:0})
-  .from("#Plants-Stems-Clip", {duration:.5, scaleY:0})
-  .from("#leaves-Clip", {duration:.5, scaleY:0})
- 
-  
-
+function fadein() {
+  const tl = gsap.timeline()
+  tl.to("#container", {alpha:1, y:0, x:0, scrollTrigger:{trigger: "#container", scrub:true}})
   return tl;
 
 }
 
-function GrassGrow(){
+// function fadein() {
+//   const tl = gsap.timeline()
+//   tl.from("#logo", {alpha:0, duration:4, y:100, fad})
+//   tl.to("#logo", {alpha:1, y:0, scrollTrigger:{trigger: "#container", scrub:true}})
+//   return tl;
 
-  const tl = gsap.timeline();
+// }
 
-  tl.from("#Grass-clip", {duration:1, scaleY:0}, "grow");
-  
-  
-  
-
-  return tl;
-
-}
-
-function FlowerOne(){
-
-  const tl = gsap.timeline();
-
-  
-  tl.from("#LG-Stem-Red-clip", {duration:1, scaleY:0}, "grow")
-  .from("#Flower-Red-One-clip", {duration:1, scaleY:0}, "grow");
-  
-  
-
-  return tl;
-
-}
-
-function FlowerTwo(){
-
-  const tl = gsap.timeline();
-
- 
-  tl.from("#DG-Stem-Two-clip", {duration:1, scaleY:0})
-  .from("#Flower-white-two-clip", {duration:.1, scaleY:0});
-  
-  
-
-  return tl;
-
-}
-
-function FlowerThree(){
-
-  const tl = gsap.timeline();
-
- 
-  tl.from("#LG-Stem-White-clip", {duration:1, scaleY:0})
-  .from("#Flower-Red-Three-clip", {duration:1, scaleY:0});
-  
-  
-
-  return tl;
-
-}
+mainTL.add(fadein())
 
 
 
-function FlowerFour(){
 
-  const tl = gsap.timeline();
+// export function slideInRight(triggerElement,animationElement ){
+//     const tl = new gsap.timeline();
+//     tl.from(animationElement,{
+//         duration:1,
+//         x: -500,
+//         alpha:0,
+//         scrollTrigger:{
+//             trigger: triggerElement,
+//             scrub:true,
+//             toggleActions: "restart none resume none",
+//             markers: true
+//         }
+//     });
+// }
 
- 
-  tl.from("#DG-Stem-One-clip", {duration:1, scaleY:0})
-  .from("#Flower-White-One-clip", {duration:1, scaleY:0});
-  
-  
 
-  return tl;
+// export function slideInLeft(triggerElement,animationElement ){
+//     const tl = new gsap.timeline();
+//     tl.from(animationElement,{
+//         duration:1,
+//         x: 500,
+//         alpha:0,
+//         scrollTrigger:{
+//             trigger: triggerElement,
+//             scrub:true,
+//             toggleActions: "restart none resume none",
+//             markers: true
+//         }
+//     });
+// }
 
-}
 
-function FlowerFive(){
+// gsap.set(".gallery",{transformOrigin:"left center"});
 
-  const tl = gsap.timeline();
 
- 
-  tl.from("#Red-Flower-Leaves-clip", {duration:1, scaleY:0})
-  .from("#Red-Flower-Group-clip", {duration:1, scaleY:0});
-  
-  
+// export function skillsTrigger(originDirection, animationElement, triggerElement){
+//     const tl = new gsap.timeline();
 
-  return tl;
+//     tl.from(animationElement,{
+//         // duration:3, 
+//         scaleX:0,
+//         transformOrigin: originDirection,
+//         scrollTrigger: {
+//             trigger: animationElement,
+//             start:"top 60%",
+//             end: "bottom 80%",
+//             toggleActions: "restart none resume none",
+//             scrub: 2,
+//             pin: "#skills",
+//             markers: true
+//         },
+//         stagger:0.25
+//     });
+// }
 
-}
 
-function FlowerSix(){
 
-  const tl = gsap.timeline();
 
- 
-  tl.from("#LG-Stem-Blue-One-clip", {duration:1, scaleY:0})
-  .from("#Flower-Blue-Bottom-clip", {duration:1, scaleY:0})
-  .from("#Flower-Blue-Top-clip", {duration:1, scaleY:0})
-  
-  
 
-  return tl;
 
-}
-
-function FlowerSeven(){
-
-  const tl = gsap.timeline();
-
- 
-  tl.from("#Yellow-Flower-clip", {duration:1, scaleY:0})
-  
-  
-  
-
-  return tl;
-
-}
-
-function FlowerEight(){
-
-  const tl = gsap.timeline();
-
- 
-  tl.from("#LG-Stem-Blue-Flower-Three-clip", {duration:1, scaleY:0})
-  .from("Blue-Flower-Two-clip", {duration:1, scaleY:0});
-  
-  
-
-  return tl;
-
-}
-
-function FlowerNine(){
-
-  const tl = gsap.timeline();
-
- 
-  // tl.from("#LG-Stem-White-clip", {duration:1, scaleY:0})
-  // .from("#Flower-Red-Three-clip", {duration:1, scaleY:0})
-  
-  
-
-  return tl;
-
-}
-
-function FlowerTen(){
-
-  const tl = gsap.timeline();
-
- 
-  // tl.from("#LG-Stem-White-clip", {duration:1, scaleY:0})
-  // .from("#Flower-Red-Three-clip", {duration:1, scaleY:0})
-  
-  
-
-  return tl;
-
-}
-
-mainTl.add(GrowPlantOne())
-.add(GrassGrow())
-.add(FlowerOne())
-.add(FlowerTwo())
-.add(FlowerThree())
-.add(FlowerFour())
-.add(FlowerFive())
-.add(FlowerSix())
-.add(FlowerSeven())
-.add(FlowerEight())
-.add(FlowerNine())
-.add(FlowerTen());
+// export function demoThing(){
+// console.log("this is working here too!");
+// console.log("working");
+// }

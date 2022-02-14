@@ -505,6 +505,7 @@ header > div aside a {
 #hero > div article {
   background-image: url("../img/hero/hero.jpg");
   background-size: cover;
+  background-color: #fff;
   background-position: center;
   height: 100%;
   width: 100%;
@@ -517,13 +518,13 @@ header > div aside a {
   text-align: center;
 }
 #hero > div article section > h1 {
-  color: #fff;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 4rem;
   font-stretch: wider;
   font-stretch: expanded;
+  margin-bottom: 100px;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
@@ -546,7 +547,7 @@ header > div aside a {
   display: grid;
   grid-template-areas: ". content .";
   grid-template-columns: auto 90% auto;
-  padding: 64px 0;
+  padding: 90% 0;
 }
 @media (min-width: 768px) {
   #content {
@@ -563,6 +564,7 @@ header > div aside a {
 @media (min-width: 1440px) {
   #content {
     grid-template-columns: auto 1440px auto;
+    padding: 128px 0;
   }
 }
 #content > div {
